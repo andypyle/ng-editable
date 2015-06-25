@@ -1,0 +1,12 @@
+<div class="edit-container">
+	<div class="editable-content"
+		ng-init="isEditable = false"
+		contenteditable="{{ isEditable }}"
+		ng-class="{editing: isEditable}"
+		ng-transclude>	
+	</div>
+	<span class="editButtons">
+		<a href="" class="edit" ng-click="isEditable = true" ng-show="!isEditable">Edit</a>
+		<a href="" class="save" ng-click="isEditable = false" ng-show="isEditable">Save</a>
+	</span>
+</div>

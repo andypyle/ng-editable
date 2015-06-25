@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	
+}
+
+main {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+p {
+	display: block;
+	line-height: 1.75;
+	font-size: 1.25rem;
+}
+
+.editing {
+	box-shadow: 0px 0px 16px green;
+	transition: all 250ms ease-in-out;
+}
+
+.edit-container {
+	position: relative;
+}
+
+.editable-content {
+	padding: .5rem 4.25rem .5rem .5rem;
+	transition: all 250ms ease-in-out;
+}
+.editButtons {
+	display: block;
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+}
+
+.editButtons a {
+	display: block;
+	padding: .5rem;
+	line-height: 1;
+	text-decoration: none;
+	color: white;
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+	font-size: .9rem;
+	text-transform: uppercase;
+	font-weight: normal !important;
+}
+
+.editButtons a.edit {
+	background-color: #42CAFD;
+	box-shadow: 2px 2px 0px #2F93B7;
+	
+}
+
+.editButtons a.save {
+	background-color: #8EB19D;
+	box-shadow: 2px 2px 0px #667F71;
+}
